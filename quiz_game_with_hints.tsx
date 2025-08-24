@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { CheckCircle, XCircle, Lightbulb, SkipForward, RotateCcw, Trophy, Upload, FileText } from 'lucide-react';
+import { CheckCircle, XCircle, Lightbulb, SkipForward, RotateCcw, Trophy, Upload } from 'lucide-react';
+
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 const QuizGame = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [showResult, setShowResult] = useState(false);
-  const [gameFinished, setGameFinished] = useState(false);
-  const [autoSkip, setAutoSkip] = useState(false);
-  const [showHints, setShowHints] = useState({});
-  const [hasEvaluated, setHasEvaluated] = useState(false);
-
-  const questions = [
+  const defaultQuestions = [
     {
       question: "Qual é a capital do Brasil?",
       options: [
@@ -20,7 +13,8 @@ const QuizGame = () => {
         { text: "Brasília", hint: "Cidade planejada construída especificamente para ser a capital." },
         { text: "Salvador", hint: "Foi a primeira capital do Brasil colonial." }
       ],
-      correct: 2
+      correct: 2,
+      explanation: "",
     },
     {
       question: "Quantos planetas existem no Sistema Solar?",
@@ -30,7 +24,8 @@ const QuizGame = () => {
         { text: "9", hint: "Era o número antes de Plutão ser reclassificado." },
         { text: "10", hint: "Número excessivo, inclui corpos que não são planetas." }
       ],
-      correct: 1
+      correct: 1,
+      explanation: "",
     },
     {
       question: "Qual é o maior oceano do mundo?",
@@ -40,7 +35,8 @@ const QuizGame = () => {
         { text: "Ártico", hint: "É o menor dos oceanos." },
         { text: "Pacífico", hint: "Cobre mais de um terço da superfície terrestre." }
       ],
-      correct: 3
+      correct: 3,
+      explanation: "",
     },
     {
       question: "Em que ano o homem pisou na Lua pela primeira vez?",
@@ -50,7 +46,8 @@ const QuizGame = () => {
         { text: "1971", hint: "Um pouco tarde, já havia acontecido." },
         { text: "1965", hint: "Muito cedo, a tecnologia ainda estava em desenvolvimento." }
       ],
-      correct: 1
+      correct: 1,
+      explanation: "",
     },
     {
       question: "Qual é o elemento químico com símbolo 'Au'?",
@@ -60,9 +57,20 @@ const QuizGame = () => {
         { text: "Ouro", hint: "Vem do latim 'aurum', metal precioso amarelo." },
         { text: "Argônio", hint: "Este é um gás nobre com símbolo Ar." }
       ],
-      correct: 2
-    }
+      correct: 2,
+      explanation: "",
+    },
   ];
+
+  const [questions, setQuestions] = useState(defaultQuestions);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showResult, setShowResult] = useState(false);
+  const [gameFinished, setGameFinished] = useState(false);
+  const [autoSkip, setAutoSkip] = useState(false);
+  const [showHints, setShowHints] = useState({});
+  const [hasEvaluated, setHasEvaluated] = useState(false);
 
   useEffect(() => {
     let timer;
@@ -118,6 +126,41 @@ const QuizGame = () => {
       ...prev,
       [optionIndex]: !prev[optionIndex]
     }));
+  };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const data = JSON.parse(event.target.result);
+        const parsed = data.map((q) => {
+          const options = q.alternativas.map((alt, index) => {
+            const letter = LETTERS[index];
+            const text = typeof alt === 'string' ? alt.replace(/^[A-Za-z]\)\s*/, '') : alt;
+            return { text, hint: q.dicas?.[letter] || '' };
+          });
+          return {
+            question: q.pergunta,
+            options,
+            correct: LETTERS.indexOf(q.resposta_correta),
+            explanation: q.explicacao,
+          };
+        });
+        setQuestions(parsed);
+        setCurrentQuestion(0);
+        setScore(0);
+        setSelectedAnswer(null);
+        setShowResult(false);
+        setGameFinished(false);
+        setShowHints({});
+        setHasEvaluated(false);
+      } catch (err) {
+        console.error('Erro ao ler arquivo:', err);
+      }
+    };
+    reader.readAsText(file);
   };
 
   const getScoreMessage = () => {
@@ -184,6 +227,18 @@ const QuizGame = () => {
           <SkipForward className="w-4 h-4" />
           Pular automaticamente para próxima pergunta (2 segundos)
         </label>
+        <div className="mt-4">
+          <label className="flex items-center gap-2 text-gray-700 cursor-pointer">
+            <Upload className="w-4 h-4" />
+            <span>Carregar perguntas (JSON)</span>
+            <input
+              type="file"
+              accept="application/json"
+              onChange={handleFileUpload}
+              className="hidden"
+            />
+          </label>
+        </div>
       </div>
 
       {/* Pergunta */}
@@ -258,6 +313,11 @@ const QuizGame = () => {
             );
           })}
         </div>
+        {hasEvaluated && questions[currentQuestion].explanation && (
+          <div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+            <p className="text-sm text-blue-800">{questions[currentQuestion].explanation}</p>
+          </div>
+        )}
       </div>
 
       {/* Botão Avaliar */}
