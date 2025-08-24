@@ -1,0 +1,382 @@
+[
+  {
+    "pergunta": "Qual o objetivo principal da Engenharia de Software?",
+    "alternativas": [
+      "A) Produzir software sem a necessidade de testes.",
+      "B) Usar práticas de gestão para desenvolver software de baixa qualidade.",
+      "C) Aplicar princípios e técnicas sistemáticos para produzir software de qualidade.",
+      "D) Projetar apenas a interface do usuário de um sistema.",
+      "E) Focar exclusivamente na codificação de programas."
+    ],
+    "resposta_correta": "C",
+    "explicacao": "A Engenharia de Software combina conhecimento técnico e gerencial para desenvolver software de qualidade de maneira sistemática. Ela visa planejar, projetar, implementar, testar e manter sistemas com métodos que promovam qualidade e eficiência.",
+    "dicas": {
+      "A": "Incorreta: testes são parte fundamental do processo de qualidade do software.",
+      "B": "Incorreta: desenvolvimento de baixa qualidade não é o objetivo da Engenharia de Software.",
+      "C": "Correta: descreve adequadamente o propósito da Engenharia de Software.",
+      "D": "Incorreta: Engenharia de Software envolve todo o ciclo, não só a interface.",
+      "E": "Incorreta: envolve muito mais que codificação; inclui análise, testes, etc."
+    }
+  },
+  {
+    "pergunta": "Qual é a principal característica do modelo em cascata (waterfall) de processo de software?",
+    "alternativas": [
+      "A) As fases de desenvolvimento são executadas sequencialmente e sem sobreposição.",
+      "B) As fases são repetidas continuamente em ciclos curtos.",
+      "C) Não exige documentação formal em cada etapa.",
+      "D) As atividades de teste ocorrem antes da codificação.",
+      "E) O cliente participa ativamente em cada fase."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "No modelo waterfall, cada fase (requisitos, análise, projeto, implementação, teste) é concluída antes de passar para a próxima, sem retornar. É uma abordagem linear e sequencial.",
+    "dicas": {
+      "A": "Correta: descreve exatamente o modelo cascata.",
+      "B": "Incorreta: isso é característica de modelos iterativos, não do waterfall.",
+      "C": "Incorreta: o waterfall tradicionalmente requer documentação formal em cada fase.",
+      "D": "Incorreta: testes vêm após implementação, não antes.",
+      "E": "Incorreta: o cliente não participa em todas as fases no waterfall clássico."
+    }
+  },
+  {
+    "pergunta": "Qual dos seguintes é um exemplo de requisito funcional em um sistema de software?",
+    "alternativas": [
+      "A) O sistema deve permitir login de usuário através de nome e senha.",
+      "B) O sistema deve ter alta disponibilidade 24/7.",
+      "C) O tempo de resposta ao carregar a página deve ser menor que 2 segundos.",
+      "D) O software deve ser desenvolvido em linguagem Java.",
+      "E) O software deve ser compatível com todos os navegadores da web."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Requisitos funcionais descrevem comportamentos específicos do sistema. Permitir login de usuário é uma função que o sistema precisa executar. As outras alternativas são restrições gerais ou características não funcionais.",
+    "dicas": {
+      "A": "Correta: descreve uma função específica (login) que o sistema deve executar.",
+      "B": "Incorreta: alta disponibilidade é requisito não funcional (qualidade do sistema).",
+      "C": "Incorreta: tempo de resposta é requisito não funcional (desempenho).",
+      "D": "Incorreta: especificar linguagem de programação é um requisito de projeto, não funcional.",
+      "E": "Incorreta: compatibilidade de navegadores é requisito não funcional."
+    }
+  },
+  {
+    "pergunta": "O que significa o termo Sprint em Scrum?",
+    "alternativas": [
+      "A) Um período fixo de tempo em que a equipe trabalha em tarefas para entregar um incremento funcional do produto.",
+      "B) Uma reunião para revisar o progresso do produto com o cliente.",
+      "C) Uma corrida de testes de carga para avaliar desempenho.",
+      "D) A fase inicial de planejamento do projeto.",
+      "E) Um documento formal de requisitos."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "No Scrum, um Sprint é um ciclo de duração fixa (geralmente 1-4 semanas) em que a equipe desenvolve e entrega um incremento do produto que pode ser avaliado.",
+    "dicas": {
+      "A": "Correta: define corretamente o Sprint como ciclo de tempo para entregar funcionalidade.",
+      "B": "Incorreta: Sprint não é a reunião de revisão, mas duração de desenvolvimento.",
+      "C": "Incorreta: não é teste de carga.",
+      "D": "Incorreta: duração para entrega incrementa software, não planejamento inicial do projeto todo.",
+      "E": "Incorreta: não é documento."
+    }
+  },
+  {
+    "pergunta": "No framework Scrum, quem é responsável por maximizar o valor do produto e gerenciar o backlog do produto?",
+    "alternativas": [
+      "A) Product Owner (Dono do Produto)",
+      "B) Scrum Master",
+      "C) Equipe de Desenvolvimento",
+      "D) Gestor de Projeto",
+      "E) Stakeholders"
+    ],
+    "resposta_correta": "A",
+    "explicacao": "No Scrum, o Product Owner é o papel responsável por definir e priorizar itens no backlog do produto para maximizar o valor entregue.",
+    "dicas": {
+      "A": "Correta: o Product Owner gerencia o backlog e maximiza o valor do produto.",
+      "B": "Incorreta: Scrum Master facilita e remove impedimentos, mas não gerencia o backlog.",
+      "C": "Incorreta: a equipe entrega funcionalidades, não define prioridades do backlog.",
+      "D": "Incorreta: em Scrum não existe figura de gestor de projeto tradicional.",
+      "E": "Incorreta: stakeholders são interessados, não gerenciam o backlog."
+    }
+  },
+  {
+    "pergunta": "Qual é a finalidade da reunião diária (Daily Scrum) na metodologia Scrum?",
+    "alternativas": [
+      "A) Permitir que a equipe de desenvolvimento sincronize o trabalho e planeje as próximas horas.",
+      "B) Divulgar o produto para clientes finais.",
+      "C) Realizar retrospectiva do sprint e discutir melhorias de processo.",
+      "D) Definir datas de lançamentos do produto.",
+      "E) Treinar os membros da equipe em novas técnicas."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "O Daily Scrum é uma breve reunião diária em que a equipe de desenvolvimento sincroniza atividades, discute impedimentos e planeja as próximas 24 horas de trabalho.",
+    "dicas": {
+      "A": "Correta: descreve a função do Daily Scrum corretamente.",
+      "B": "Incorreta: o foco é internamente na equipe, não apresentar a clientes.",
+      "C": "Incorreta: retrospectiva é feita no final do sprint, não diariamente.",
+      "D": "Incorreta: lançamentos são planejados separadamente.",
+      "E": "Incorreta: é uma reunião de sincronização, não treinamento."
+    }
+  },
+  {
+    "pergunta": "Qual modelo de processo de software enfatiza ciclos iterativos repetidos, onde cada ciclo entrega um incremento funcional do sistema?",
+    "alternativas": [
+      "A) Modelo em Cascata (Waterfall)",
+      "B) Modelo Incremental",
+      "C) Modelo em Espiral",
+      "D) Modelo V",
+      "E) Modelo Prototipagem"
+    ],
+    "resposta_correta": "B",
+    "explicacao": "O modelo incremental é baseado em múltiplos ciclos (iterações) de desenvolvimento, cada um acrescentando funcionalidades até completar o sistema.",
+    "dicas": {
+      "A": "Incorreta: modelo Cascata é linear, não iterativo.",
+      "B": "Correta: descreve o modelo incremental, que utiliza iterações para desenvolver o sistema por partes.",
+      "C": "Incorreta: modelo em Espiral é iterativo, mas enfatiza análise de riscos, não é a resposta mais direta para ciclos incrementais.",
+      "D": "Incorreta: modelo V é linear como Cascata, com testes em paralelo.",
+      "E": "Incorreta: prototipagem é diferente de desenvolvimento incremental."
+    }
+  },
+  {
+    "pergunta": "Qual é o foco principal do teste de unidade em um ciclo de testes de software?",
+    "alternativas": [
+      "A) Testar partes isoladas do código (funções, métodos) para verificar se funcionam corretamente individualmente.",
+      "B) Testar a interface entre vários módulos integrados para verificar sua comunicação.",
+      "C) Testar o sistema completo integrado em relação aos requisitos do usuário.",
+      "D) Realizar testes de aceitação com o cliente em ambiente de produção.",
+      "E) Avaliar o desempenho e a carga do sistema sob estresse."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "O teste de unidade verifica componentes individuais do software (como funções ou métodos) isoladamente, garantindo que cada parte funcione conforme o esperado.",
+    "dicas": {
+      "A": "Correta: define exatamente o teste de unidade.",
+      "B": "Incorreta: isso é teste de integração.",
+      "C": "Incorreta: isso é teste de sistema.",
+      "D": "Incorreta: isso é teste de aceitação.",
+      "E": "Incorreta: descreve teste de desempenho, não unidade."
+    }
+  },
+  {
+    "pergunta": "Qual é o principal objetivo do teste de integração em desenvolvimento de software?",
+    "alternativas": [
+      "A) Verificar se dois ou mais módulos ou componentes integrados funcionam corretamente em conjunto.",
+      "B) Testar o código individualmente, sem dependência de outros módulos.",
+      "C) Avaliar a satisfação do usuário após a entrega do software.",
+      "D) Determinar o tempo de resposta do sistema sob alta carga.",
+      "E) Conferir a documentação com os requisitos especificados."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "O teste de integração se concentra em verificar se os módulos ou componentes, quando combinados, funcionam corretamente em conjunto e comunicam-se como esperado.",
+    "dicas": {
+      "A": "Correta: resume a função do teste de integração.",
+      "B": "Incorreta: descreve teste unitário.",
+      "C": "Incorreta: descreve teste de aceitação.",
+      "D": "Incorreta: descreve teste de desempenho (carga/estresse).",
+      "E": "Incorreta: descreve análise de documentação."
+    }
+  },
+  {
+    "pergunta": "O que melhor descreve a prática Test-Driven Development (TDD)?",
+    "alternativas": [
+      "A) Criar um teste automatizado falho antes de implementar a funcionalidade, e depois desenvolver o código necessário até o teste passar.",
+      "B) Escrever todos os testes após terminar a implementação de todas as funcionalidades.",
+      "C) Desprezar testes em fases iniciais e aplicá-los somente após o produto estar pronto.",
+      "D) Focar exclusivamente em testes manuais realizadas pelo cliente.",
+      "E) Utilizar somente testes de regressão para validar correções."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "No TDD, a prática comum é escrever um teste automatizado que inicialmente falha, em seguida implementar a funcionalidade até que o teste passe, repetindo esse ciclo.",
+    "dicas": {
+      "A": "Correta: descreve o ciclo do TDD.",
+      "B": "Incorreta: TDD é justamente o contrário (testes antes do código).",
+      "C": "Incorreta: ignorar testes iniciais vai contra TDD.",
+      "D": "Incorreta: TDD prioriza testes automatizados, não só manuais.",
+      "E": "Incorreta: TDD não foca só em regressão."
+    }
+  },
+  {
+    "pergunta": "Na engenharia de software, qual a principal diferença entre verificação e validação?",
+    "alternativas": [
+      "A) Verificação garante que o sistema faz as coisas corretamente conforme especificações; validação garante que o sistema faz as coisas certas para os usuários.",
+      "B) Verificação é realizada após a entrega; validação é realizada durante o desenvolvimento.",
+      "C) Verificação se refere a testes automáticos; validação a testes manuais.",
+      "D) Verificação não envolve testes; validação envolve testes unitários.",
+      "E) Não há diferença, os termos são sinônimos."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Verificação refere-se a conferir se o software foi construído corretamente de acordo com as especificações (faz certo). Validação refere-se a garantir que o software atende às necessidades reais dos usuários (faz o certo).",
+    "dicas": {
+      "A": "Correta: resume a diferença sutil entre verificação (conformidade com especificação) e validação (satisfaz necessidades).",
+      "B": "Incorreta: ordem de execução (após entrega vs durante desenvolvimento) não é a distinção correta.",
+      "C": "Incorreta: não há essa associação exata com testes.",
+      "D": "Incorreta: verificação pode envolver testes; a opção é contraditória.",
+      "E": "Incorreta: termos têm significados distintos."
+    }
+  },
+  {
+    "pergunta": "Para um bom projeto de software modular, é desejável que cada módulo apresente:",
+    "alternativas": [
+      "A) Alta coesão e baixo acoplamento.",
+      "B) Alta coesão e alto acoplamento.",
+      "C) Baixa coesão e alto acoplamento.",
+      "D) Baixa coesão e baixo acoplamento.",
+      "E) Coesão e acoplamento altos."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Boas práticas de design recomendam alta coesão (todas as partes do módulo estão fortemente relacionadas) e baixo acoplamento (poucas dependências externas).",
+    "dicas": {
+      "A": "Correta: alta coesão e baixo acoplamento é o ideal.",
+      "B": "Incorreta: alto acoplamento é indesejável.",
+      "C": "Incorreta: baixa coesão e alto acoplamento é pior cenário.",
+      "D": "Incorreta: baixa coesão é ruim mesmo que acoplamento seja baixo.",
+      "E": "Incorreta: alto acoplamento é problemático."
+    }
+  },
+  {
+    "pergunta": "O que é gerenciamento de configuração de software?",
+    "alternativas": [
+      "A) Processo de controlar e documentar alterações em artefatos de software (código, documentos) para manter integridade e rastreabilidade das versões.",
+      "B) Uma metodologia ágil alternativa ao Scrum.",
+      "C) Ferramenta usada apenas para monitorar servidores em produção.",
+      "D) O ato de configurar variáveis de sistema em arquivos .cfg.",
+      "E) Um padrão para esquematizar interfaces de usuário."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Gerenciamento de configuração envolve controle de versões, baseline e rastreamento de mudanças em artefatos de software, garantindo consistência.",
+    "dicas": {
+      "A": "Correta: resume gerenciamento de configuração.",
+      "B": "Incorreta: não é metodologia ágil.",
+      "C": "Incorreta: não é apenas monitorar servidores.",
+      "D": "Incorreta: refere-se a arquivos de config do sistema.",
+      "E": "Incorreta: não é para UI."
+    }
+  },
+  {
+    "pergunta": "No controle de versão, o que é um branch (ramificação)?",
+    "alternativas": [
+      "A) Uma linha de desenvolvimento paralela que permite trabalhar em recursos ou correções separadamente sem afetar a versão principal.",
+      "B) Uma tag para marcar uma versão estável do software.",
+      "C) Um tipo de teste automatizado de rotina.",
+      "D) A ação de mesclar dois conjuntos de dados em um banco de dados.",
+      "E) Um documento de requerimentos do usuário."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Branching em um sistema de controle de versão (como Git) cria uma linha separada de desenvolvimento, permitindo experimentar ou desenvolver funcionalidades sem afetar a linha principal.",
+    "dicas": {
+      "A": "Correta: explica o conceito de branch.",
+      "B": "Incorreta: tag é diferente de branch.",
+      "C": "Incorreta: branch não é teste.",
+      "D": "Incorreta: branch não envolve mesclar dados.",
+      "E": "Incorreta: branch não é documento."
+    }
+  },
+  {
+    "pergunta": "O que é Integração Contínua (Continuous Integration) no desenvolvimento de software?",
+    "alternativas": [
+      "A) Prática de integrar (mesclar) o trabalho dos desenvolvedores em uma base de código compartilhada várias vezes ao dia, automatizando a compilação e testes.",
+      "B) Processo de entregar uma nova versão de software somente ao final do projeto.",
+      "C) Metodologia que substitui a fase de testes por revisões semanais.",
+      "D) Ferramenta para criar diagramas UML dinâmicos.",
+      "E) Técnica de gerenciamento de projetos sem prazos fixos."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Integração Contínua é uma prática onde desenvolvedores integram código em um repositório compartilhado várias vezes ao dia, com cada integração verificada por compilação e testes automatizados.",
+    "dicas": {
+      "A": "Correta: descreve a prática de CI.",
+      "B": "Incorreta: é oposto ao CI.",
+      "C": "Incorreta: CI envolve automação de testes, não revisão manual.",
+      "D": "Incorreta: CI não é ferramenta UML.",
+      "E": "Incorreta: não descreve CI."
+    }
+  },
+  {
+    "pergunta": "Qual é o objetivo principal da prática DevOps no ciclo de vida de software?",
+    "alternativas": [
+      "A) Integrar e acelerar o desenvolvimento (Dev) e operações (Ops) através de automação e colaboração, visando entrega de software mais rápida e confiável.",
+      "B) Dividir a equipe de desenvolvimento em duas equipes isoladas, uma para codificar e outra para testar.",
+      "C) Garantir que somente desenvolvedores possam fazer deploy em produção.",
+      "D) Substituir o Scrum por metodologias ágeis emergentes a cada sprint.",
+      "E) Enviar desenvolvedores para assistir operações de redes diariamente."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "DevOps é um conjunto de práticas que promove a integração entre desenvolvimento e operações, automação de processos (build, teste, deploy) e colaboração para acelerar e melhorar a qualidade das entregas.",
+    "dicas": {
+      "A": "Correta: resume o objetivo do DevOps.",
+      "B": "Incorreta: DevOps propõe colaboração, não isolamento.",
+      "C": "Incorreta: DevOps não restringe deployment apenas a devs.",
+      "D": "Incorreta: DevOps complementa o ágil, não substitui Scrum.",
+      "E": "Incorreta: não se trata de observar redes."
+    }
+  },
+  {
+    "pergunta": "O que caracteriza uma manutenção adaptativa de software?",
+    "alternativas": [
+      "A) Adaptação do software a mudanças no ambiente de execução (como sistemas operacionais, hardware ou bibliotecas).",
+      "B) Correção de defeitos ou falhas encontradas no sistema em uso.",
+      "C) Melhorias ou incrementações de funcionalidades existentes no sistema.",
+      "D) Medidas preventivas para reduzir a probabilidade de futuros defeitos.",
+      "E) Reescrita completa do software em outra linguagem."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "A manutenção adaptativa refere-se a atualizar o software em resposta a mudanças no ambiente de operação (novas versões de sistemas operacionais, bibliotecas, etc.).",
+    "dicas": {
+      "A": "Correta: descreve manutenção adaptativa.",
+      "B": "Incorreta: isso é manutenção corretiva.",
+      "C": "Incorreta: manutenção perfectiva.",
+      "D": "Incorreta: manutenção preventiva.",
+      "E": "Incorreta: reescrever é reengenharia, não manutenção adaptativa."
+    }
+  },
+  {
+    "pergunta": "Quais são os três elementos principais, conhecidos como tripla restrição, no gerenciamento de projetos de software?",
+    "alternativas": [
+      "A) Escopo, Tempo e Custo (ou Recursos).",
+      "B) Requisitos, Código e Testes.",
+      "C) Análise, Design e Implementação.",
+      "D) Qualidade, Segurança e Usabilidade.",
+      "E) Vendedores, Equipe e Clientes."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "A tripla restrição do gerenciamento de projetos (ou triângulo do projeto) é composta por Escopo (funcionalidades a entregar), Tempo (cronograma) e Custo (recursos).",
+    "dicas": {
+      "A": "Correta: descreve Escopo, Tempo, Custo.",
+      "B": "Incorreta: fases de desenvolvimento, não restrições de projeto.",
+      "C": "Incorreta: etapas do projeto, não restrições.",
+      "D": "Incorreta: atributos do software, não restrições de projeto.",
+      "E": "Incorreta: stakeholders, não restrições."
+    }
+  },
+  {
+    "pergunta": "O que mede a métrica densidade de defeitos em um projeto de software?",
+    "alternativas": [
+      "A) Relação entre o número de defeitos encontrados e o tamanho do software (por exemplo, defeitos por mil linhas de código).",
+      "B) Quantidade de defeitos detectados por usuário final.",
+      "C) Relação entre defeitos e entrevistas realizadas.",
+      "D) Porcentagem de tempo de teste utilizada para encontrar erros.",
+      "E) Número de erros corrigidos por semana."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Densidade de defeitos é uma métrica que relaciona a quantidade de defeitos encontrados com o tamanho do software (geralmente em KLOC ou ponto de função), indicando a qualidade do código.",
+    "dicas": {
+      "A": "Correta: descreve densidade de defeitos.",
+      "B": "Incorreta: não se baseia em número de usuários.",
+      "C": "Incorreta: entrevistas não medem defeitos.",
+      "D": "Incorreta: não é proporção de tempo de teste.",
+      "E": "Incorreta: é outra métrica de produtividade."
+    }
+  },
+  {
+    "pergunta": "O que é a complexidade ciclomática em um código-fonte?",
+    "alternativas": [
+      "A) Uma métrica que indica o número de caminhos de fluxo independentes no programa, relacionado ao número de pontos de decisão.",
+      "B) O tempo de execução total do código em microsegundos.",
+      "C) O número de caracteres ou tokens no código.",
+      "D) O número de janelas abertas simultaneamente pelo programa.",
+      "E) Um índice de segurança do código baseado em criptografia."
+    ],
+    "resposta_correta": "A",
+    "explicacao": "Complexidade ciclomática é uma métrica que conta o número de caminhos independentes no código (decisões +1), indicando complexidade de controle.",
+    "dicas": {
+      "A": "Correta: define a complexidade ciclomática.",
+      "B": "Incorreta: não é tempo de execução.",
+      "C": "Incorreta: descreve tamanho do código, não ciclomática.",
+      "D": "Incorreta: não é número de janelas.",
+      "E": "Incorreta: não é índice de segurança."
+    }
+  }
+]
